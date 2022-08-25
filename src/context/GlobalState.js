@@ -36,7 +36,7 @@ export const GLobalContext = createContext(initialState);
 //Create a provider for Global Context
 
 export const GlobalProvider = ({ children }) => {
-  //   const [state, dispatch] = useReducer(AppReducer, initialState);
+  const [state] = useReducer(AppReducer, initialState);
   return (
     <GLobalContext.Provider
       value={{
